@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1:3 Ratio Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>1:3 Ratio Trading Calculator</h1>
+      <form id="ratioForm">
+        <div class="input-group">
+          <input
+            type="number"
+            id="amount"
+            placeholder="Per share price"
+            required
+          />
+          <input
+            type="number"
+            id="lotsize"
+            placeholder="Enter your lot quantity"
+            required
+          />
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div class="result">
+        <p>Total Investment: <span id="invest" style="color: green">-</span></p>
+        <p>Stop Loss (1x): <span id="sl" style="color: red">-</span></p>
+        <p>Target Price (3x): <span id="target">-</span></p>
+        <p>Total Loss (1x): <span id="tl" style="color: red">-</span></p>
+        <p>Total Profit (3x): <span id="tp">-</span></p>
+      </div>
+      <span class="madeinblr"
+        ><a href="https://github.com/rahulbnc463"
+          >made in Bangalore By ཞĄɧŲƖ࿐</a
+        ></span
+      >
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
